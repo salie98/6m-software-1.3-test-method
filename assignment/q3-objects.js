@@ -16,8 +16,13 @@ const bookTitle = ["Lord of the Rings", "Programming for Dummies", "Introduction
 let booksObj = {}; 
 
 function convert(keyArr, valueArr){
-    
     // Add code here
+    let bkobj = {};  
+    for (let b=0; b<keyArr.length; b++){
+        bkobj[keyArr[b]] = valueArr[b];
+    }
+   console.log(bkobj);
+    return bkobj; 
     /*
         Tips:
         - Step 1: Create a local scoped object literal.

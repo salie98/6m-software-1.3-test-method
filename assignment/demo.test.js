@@ -16,14 +16,14 @@ describe("Demo", ()=>{
         expect(spyFn).toHaveBeenCalledTimes(studentList.length);
     })
 
-    it("should test the convert function of q3", ()=>{
-        const keyArr = ["NLB1", "NLB2"];
-        const valueArr = ["Book A", "Book B"];
+     it("should test the convert function of q3", ()=>{
+         const keyArr = ["NLB1", "NLB2"];
+         const valueArr = ["Book A", "Book B"];
 
-        const result = convert(keyArr, valueArr);
-        //the toBe() can be used to match specific values
-        expect(result["NLB1"]).toBe("Book A");
-        expect(result["NLB2"]).toBe("Book B");
-    })
+         const result = convert(keyArr, valueArr);
+         //the toBe() can be used to match specific values
+         expect(result["NLB1"]).toBe("Book A");
+         expect(result["NLB2"]).toBe("Book B");
+     })
 })
 //So when the command `npm run test` is run, it calls the test suite and runs the individual tests.
